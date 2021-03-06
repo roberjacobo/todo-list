@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "todo-list",
+    author: `@roberjacobo`
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-sass`,
+  ],
 };

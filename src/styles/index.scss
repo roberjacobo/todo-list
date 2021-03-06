@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  background-color: rgb(241, 241, 241);
+  margin: 0;
+}
+
+* {
+  transition: .2s ease-in all;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2%;
+  font-family: 'Crimson Pro', serif;
+  font-size: 48px;
+  font-weight: 200;
+}
