@@ -1,0 +1,19 @@
+.darkmode_button {
+  font-size: 15px;
+  border: none;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 0;
+  text-align: center;
+  width: 150px;
+  height: auto;
+  text-decoration: none;
+  box-shadow: 0px 3px 5px #373c3c31;
+}
+
+.darkmode_button:hover {
+  box-shadow: 0px 0px 0px;
+  background: #cfcfcf;
+}

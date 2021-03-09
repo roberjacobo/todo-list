@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  width: 500px;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+}
+
+.box-1 {
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+.box-2 {
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+.box-3 {
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+}

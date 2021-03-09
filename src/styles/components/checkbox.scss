@@ -1,0 +1,15 @@
+.task_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input[type=text] {
+  padding: 12px 10px;
+  margin: 8px 5px;
+  box-sizing: border-box;
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: black;
+}

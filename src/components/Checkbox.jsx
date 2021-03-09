@@ -1,6 +1,8 @@
 //Checkbox — Es el componente que va a tener lo necesario para mostrar el checkbox, poder marcar / desmarcar una tarea
 import React, { Fragment } from 'react';
 
+import '../styles/components/checkbox.scss'
+
 const Checkbox = props => {
   const {
     onChange,
@@ -8,15 +10,16 @@ const Checkbox = props => {
   } = props
   return (
     <Fragment>
-      <label className="todo new-item">
-        <input
-        className="todo__state"
-        name={id}
-        type="checkbox"
-        defaultChecked={done}
-        onChange={onChange}
-        />
-        <div className="todo__text">{description}</div>
+      <label>
+        <div className="task_container">
+          <input
+            name={id}
+            type="checkbox"
+            defaultChecked={done}
+            onChange={onChange}
+          />
+          {description}
+        </div>
       </label>
     </Fragment>
   );

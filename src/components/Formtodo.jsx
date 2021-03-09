@@ -21,16 +21,16 @@ const Formtodo = props => {
     <>
       <form onSubmit={handleSubmit}>
         <div className="todo-list">
-          <div className="file-input">
-            <input 
-            type="text"
-            className="text"
-            value={description}
-            onChange={e => setDescription(e.target.value)}
+          <div className="col-auto">
+            <input
+              type="text"
+              className=""
+              value={description}
+              onChange={e => setDescription(e.target.value)}
             />
             <button
-            className="button pink"
-            disabled={description ? "" : "disabled"}
+              className="btn btn-light"
+              disabled={description ? "" : "disabled"}
             >
               Add
             </button>

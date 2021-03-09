@@ -12,7 +12,7 @@ const Tasklist = props => {
   }
 
   const onChangeStatus = e => {
-    const {name, checked} = e.target
+    const { name, checked } = e.target
     const updatedList = list.map(item => ({
       ...item,
       done: item.id === name ? checked : item.done
@@ -25,16 +25,18 @@ const Tasklist = props => {
   ))
 
   return (
-    <div className="todo-list">
-      {list.length ? chk : "No tasks"}
-      {list.length ? (
-        <p>
-          <button className="button blue" onClick={onClickRemoveItem}>
-            Delete all done
-          </button>
-        </p>
-      ) : null }
-    </div>
+    <>
+      <div className="todo-list">
+          {list.length ? chk : "No tasks"}
+        {list.length ? (
+          <p>
+            <button className="button blue" onClick={onClickRemoveItem}>
+              Delete all done
+            </button>
+          </p>
+        ) : null}
+      </div>
+    </>
   );
 }
 
